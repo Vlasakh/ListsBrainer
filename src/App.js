@@ -1,3 +1,7 @@
+/**
+ * some
+ */
+
 import React from 'react';
 
 import Layout from './components/Layout';
@@ -23,13 +27,19 @@ class App extends React.Component {
         super(...args);
 
         this.state.baseWordsList = setBaseWords(this, words, true);
-        this.state.wordsList = generateWords(this, this.state.baseWordsList, this.state.wordsCount, true);
+        this.state.wordsList = generateWords(
+            this,
+            this.state.baseWordsList,
+            this.state.wordsCount,
+            true
+        );
     }
 
     setWordsCount = count => setWordsCount(this, count);
 
     setBaseWords = newWords => setBaseWords(this, newWords);
-    generateWords = () => generateWords(this, this.state.baseWordsList, this.state.wordsCount);
+    generateWords = () =>
+        generateWords(this, this.state.baseWordsList, this.state.wordsCount);
 
     setGuessMode = () => setGuessMode(this);
     setLearnMode = () => surrender(this);
