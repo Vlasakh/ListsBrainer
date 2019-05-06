@@ -1,0 +1,16 @@
+{
+  "name": "lists-brainer",
+  "title": "List Brainer",
+  "version": "2.0",
+  "description": "https://github.com/Vlasakh/ListsBrainer",
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "classnames": "2.2.6",
+    "debounce": "1.2.0",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "keywords": []
+}
